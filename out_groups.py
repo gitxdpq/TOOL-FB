@@ -127,7 +127,7 @@ def ___main___():
     Write.Print('Đang Check Live Cookie\r', Colors.yellow_to_red, interval = 0.0125)
 
     id_ck = cookie.split('c_user=')[1].split(';')[0]
-    get_dt_ck = requests.get('https://mbasic.facebook.com/home.php?='+id_ck, headers={'cookie':cookie}).text
+    get_dt_ck = requests.get('https://mbasic.facebook.com/profile.php?='+id_ck, headers={'cookie':cookie}).text
     try:
         name_profile = get_dt_ck.split('<title>')[1].split('</title>')[0]
         fb_dtsg = get_dt_ck.split('<input type="hidden" name="fb_dtsg" value="')[1].split('"')[0]
