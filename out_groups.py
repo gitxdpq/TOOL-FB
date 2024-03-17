@@ -3,7 +3,7 @@
 # HỔ TRỢ SUPPORT : Facebook.com/wuok.x.KashinKoji
 
 
-___Admin___ = 'Dương Phú Quốc'
+___Admin___ = 'Dươngg Phú Quốcc'
 import requests,os
 from pystyle import Write,Colors,Colorate,Anime,Center
 from datetime import datetime
