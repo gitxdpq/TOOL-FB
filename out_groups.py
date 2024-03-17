@@ -2,6 +2,8 @@
 # KHÔNG ĐEM ĐI BÁN / SỬA CHỮA / ...
 # HỔ TRỢ SUPPORT : Facebook.com/wuok.x.KashinKoji
 
+
+___Admin___ = '___Admin___ = Dương Phú Quốc'
 import requests,os
 from pystyle import Write,Colors,Colorate,Anime,Center
 from datetime import datetime
@@ -19,10 +21,10 @@ def gach():
 
 def logo():
     os.system('cls' if os.name == 'nt' else 'clear')
-    ban = '''
+    ban = f'''
      -- SHARE TẠI WEBSITE: github.com/gitxdpq --
      -- Phiên Bản Free Và Suột Code No Encode --
-   -- Copyright By Duongg Phu Quocc/ @Wuoc'sDev -- 
+   -- Copyright By {___Admin___}/ @Wuoc'sDev -- 
 ────────────────────────────────────────────────────────
 '''
     banner = (Colorate.Horizontal(Colors.purple_to_red, ban))
@@ -173,4 +175,5 @@ def ___main___():
             dem += 1
 
 
-___main___()
+if ___Admin___ in requests.get('https://raw.githubusercontent.com/gitxdpq/TOOL-FB/main/out_groups.py').text: ___main___()
+else: print('Out !'); quit()
